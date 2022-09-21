@@ -13,7 +13,7 @@ provides=('clash')
 conflicts=('clash' 'clash-verge-bin')
 source=('clash-verge_1.0.6_amd64.deb')
 
-sha512sums=('fb0fe6dbbfaefec64c95d0ab3494ed4c82ae01ec5b9fe31c1340edb129ca4806b6ffcfb2b40dff9c122beb4637115b4bad4fe3aa8ff70cbff46420f533414392')
+sha512sums=('d6d1b803c1f288d65719e13c56c1006830f02b624b35dee832e01a3cabd405d2e6c4fc76e08776057c5025f37020c278d232ec07ecb19732d34d51edcda223a1')
 
 package() {
 	tar xpf data.tar.gz -C ${pkgdir}
