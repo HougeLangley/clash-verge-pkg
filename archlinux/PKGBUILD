@@ -1,0 +1,20 @@
+# Maintainer: mindnightix <midnightix@protonmail.com>
+
+pkgname=clash-verge-git
+_pkgname=clash-verge
+pkgver=1.0.6
+pkgrel=20220922
+pkgdesc="A Clash GUI based on tauri."
+arch=('x86_64')
+url="https://github.com/zzzgydi/clash-verge"
+license=('GPL3')
+depends=('libappindicator-gtk3' 'webkit2gtk' 'gtk3' 'libayatana-appindicator')
+provides=('clash')
+conflicts=('clash' 'clash-verge-bin')
+source=('clash-verge_1.0.6_amd64.deb')
+
+sha512sums=('fb0fe6dbbfaefec64c95d0ab3494ed4c82ae01ec5b9fe31c1340edb129ca4806b6ffcfb2b40dff9c122beb4637115b4bad4fe3aa8ff70cbff46420f533414392')
+
+package() {
+	tar xpf data.tar.gz -C ${pkgdir}
+}
