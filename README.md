@@ -16,3 +16,15 @@
 
 1. 个人使用，测试和反馈
 2. 学习，后续如果能够直接打包 pkg 会更好
+
+## Archlinux 安装方式 ##
+
+1. 添加我的个人源：
+    - `[xxx]`
+    - `SigLevel = Optional TrustAll`
+    - `Server = http://hougearch.litterhougelangley.club/x86_64/`
+2. 添加后，`pacman -Sy; pacman -S clash-verge-git` 即可。
+
+## Gentoo 安装方法 ##
+
+暂未完成
