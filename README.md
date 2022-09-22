@@ -27,4 +27,22 @@
 
 ## Gentoo 安装方法 ##
 
-暂未完成
+1. 就像上面构建部分所述，deb 包我在 Gentoo 的 lxd 容器中进行打包，随后修改名称为当前日期后发布到 github release 页面为 Gentoo 后续分发做准备；
+2. 目前完成 Gentoo 上的 ebuild 编写，并能将 deb 分发成 pkg 包，安装到 Gentoo 系统中提供给用户使用。
+
+![界面](screenshot/01.png)
+
+![设置](screenshot/02.png)
+
+![可以正常切换内核](screenshot/03.png)
+
+## Gentoo 系统如何参与测试和使用 ##
+
+1. 添加我的测试 overlay
+    - `[clash-verge]`
+    - `location = /var/db/repos/clash-verge`
+    - `sync-type = git`
+    - `sync-uri = https://github.com/HougeLangley/clash-verge-bin-overlay.git`
+2. 以下命令请在 root 权限下运行
+    - `emerge --sync; emerge -avl net-proxy/clash-verge-bin`
+3. 等待完成后就能正常使用了，如果各位使用有任何问题，请提交 issue 给我，我会反馈给作者。
