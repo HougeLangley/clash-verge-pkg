@@ -30,11 +30,11 @@
 1. 就像上面构建部分所述，deb 包我在 Gentoo 的 lxd 容器中进行打包，随后修改名称为当前日期后发布到 github release 页面为 Gentoo 后续分发做准备；
 2. 目前完成 Gentoo 上的 ebuild 编写，并能将 deb 分发成 pkg 包，安装到 Gentoo 系统中提供给用户使用。
 
-![界面](screenshot/01.png)
+![界面](/gentoo/screenshot/01.png)
 
-![设置](screenshot/02.png)
+![设置](/gentoo/screenshot/02.png)
 
-![可以正常切换内核](screenshot/03.png)
+![可以正常切换内核](/gentoo/screenshot/03.png)
 
 ## Gentoo 系统如何参与测试和使用 ##
 
