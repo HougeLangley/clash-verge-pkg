@@ -38,7 +38,7 @@
 
 ## Gentoo 系统如何参与测试和使用 ##
 
-1. 添加我的测试 overlay
+1. 添加我的测试 overlay 到 `/etc/portage/repos.conf/xxx.conf` 中：
     - `[clash-verge]`
     - `location = /var/db/repos/clash-verge`
     - `sync-type = git`
