@@ -39,10 +39,10 @@
 ## Gentoo 系统如何参与测试和使用 ##
 
 1. 添加我的测试 overlay 到 `/etc/portage/repos.conf/xxx.conf` 中：
-    - `[hougeapps-overlay]`
-    - `location = /var/db/repos/hougeapps-overlay`
+    - `[gentoo-zh]`
+    - `location = /var/db/repos/gentoo-zh`
     - `sync-type = git`
-    - `sync-uri = https://github.com/HougeLangley/hougeapps-overlay.git`
+    - `sync-uri = https://github.com/microcai/gentoo-zh.git`
 2. 以下命令请在 root 权限下运行
     - `emerge --sync; emerge -avl net-proxy/clash-verge-bin`
 3. 等待完成后就能正常使用了，如果各位使用有任何问题，请提交 issue 给我，我会反馈给作者。
