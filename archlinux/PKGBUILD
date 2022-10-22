@@ -3,8 +3,8 @@
 
 pkgname=clash-verge-git
 _pkgname=clash-verge
-pkgver=1.1.0
-pkgrel=20221006
+pkgver=1.1.1
+pkgrel=20221022
 pkgdesc="A Clash GUI based on tauri."
 arch=('x86_64')
 url="https://github.com/zzzgydi/clash-verge"
@@ -14,7 +14,7 @@ provides=('clash')
 conflicts=('clash' 'clash-verge-bin')
 source=("http://hougearch.litterhougelangley.club/src/clash-verge_${pkgver}_amd64.deb")
 
-sha512sums=('520dbb8bd2609c7ee700852d0c05629ce41b932f9831c11495c0366fb4c42d66c0db904e48ec79c5492b80e511a36f304e269c48594b0f0f55cd798bdbbf8b4b')
+sha512sums=('aaf39996eaaf880028f3fbb0cc41e5ef3cf8b0e13d9f35ad5f0a22758f7a47884c2706bd661ab1fedf0daf4a8d11cd1f006c95e9893b1d6b71c5aadd0dda438d')
 
 package() {
 	tar xpf data.tar.gz -C ${pkgdir}
